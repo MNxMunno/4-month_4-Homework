@@ -172,7 +172,7 @@ main {
         gap: 40px;
         .card {
           max-width: 584px;
-          height: 200px;
+
           transition: 0.4s;
           display: flex;
           align-items: center;
@@ -200,6 +200,9 @@ main {
               font-weight: 400;
               line-height: 150%; /* 24px */
             }
+          }
+          img {
+            width: 100%;
           }
         }
         .card-1 {
@@ -378,6 +381,21 @@ main {
         .cards {
           justify-content: center;
           flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .sale {
+      .content {
+        .cards {
+          .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+          }
         }
       }
     }

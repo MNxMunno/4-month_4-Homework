@@ -154,7 +154,6 @@ main .sale .content .cards {
 }
 main .sale .content .cards .card {
   max-width: 584px;
-  height: 200px;
   transition: 0.4s;
   display: flex;
   align-items: center;
@@ -178,6 +177,9 @@ main .sale .content .cards .card .texts p {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+}
+main .sale .content .cards .card img {
+  width: 100%;
 }
 main .sale .content .cards .card-1 {
   border-radius: 4px;
@@ -319,6 +321,15 @@ main .articles .content .cards .card:nth-child(2) .text {
   }
   main .sale .content .cards {
     justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 500px) {
+  main .sale .content .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
     flex-wrap: wrap;
   }
 }
