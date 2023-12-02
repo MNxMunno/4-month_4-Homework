@@ -7,6 +7,7 @@ header {
   padding: 20px 0;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
   z-index: 100;
+
   nav {
     display: flex;
     align-items: center;
@@ -169,6 +170,35 @@ header {
             display: none;
           }
         }
+      }
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .items1 {
+        display: grid;
+        grid-template-columns: 12fr;
+        .catalog {
+          display: none;
+        }
+        #text {
+          width: 100%;
+        }
+      }
+      .items2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        background: #fff;
+        bottom: -450px;
+        left: 0;
+        right: 0;
+        padding: 0 10px;
       }
     }
   }

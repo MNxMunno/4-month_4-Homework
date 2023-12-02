@@ -477,6 +477,35 @@ header nav .items2 .support p {
     display: none;
   }
 }
+@media only screen and (max-width: 800px) {
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  header nav .items1 {
+    display: grid;
+    grid-template-columns: 12fr;
+  }
+  header nav .items1 .catalog {
+    display: none;
+  }
+  header nav .items1 #text {
+    width: 100%;
+  }
+  header nav .items2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    bottom: -450px;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+  }
+}
 
 @font-face {
   font-family: Rubik;
