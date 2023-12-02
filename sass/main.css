@@ -1,11 +1,133 @@
 main {
-  height: 100vh;
   background: var(--main-bg-page, #fbf8ec);
 }
 main .hero {
   background: #fff;
-  background: url(../../assets/images/support/hero.png);
-  background-repeat: repeat;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+}
+main .hero .hero-contents {
+  position: absolute;
+  left: 215px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+main .hero .hero-contents h1 {
+  color: var(--main-on-surface, #414141);
+  text-align: center;
+  /* Desc/Header/L */
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 72px */
+}
+main .products .content .link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+main .products .content .link h2 {
+  color: var(--main-on-surface, #414141);
+  /* Desc/Header/M */
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 54px */
+}
+main .products .content .link a {
+  color: var(--grayscale-hardest, #606060);
+  text-align: center;
+  /* Desc/Text/S */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+main .products .content .cards {
+  padding-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+main .products .content .cards .card {
+  border-radius: 4px;
+  background: var(--main-surface, #fff);
+  /* Default/XS */
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  width: 272px;
+  padding-bottom: 8px;
+}
+main .products .content .cards .card .content {
+  padding: 8px;
+}
+main .products .content .cards .card .content .prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .products .content .cards .card .content .prices .text h3 {
+  color: var(--grayscale-hardest, #606060);
+  /* Desc/Text/S */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+main .products .content .cards .card .content .prices .text h3 b {
+  color: var(--main-on-surface, #414141);
+  /* Desc/Text-Bold/M */
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+main .products .content .cards .card .content .prices .text p {
+  color: #bfbfbf;
+  /* Desc/Text/XS */
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+main .products .content .cards .card .content p {
+  color: var(--main-on-surface, #414141);
+  /* Desc/Text/S */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  padding: 8px 0;
+}
+main .products .content .cards .card .content a {
+  padding: 8px 88px;
+  border-radius: 4px;
+  border: 1px solid var(--main-secondary, #70c05b);
+  color: var(--main-secondary, #70c05b);
+  text-align: center;
+  /* Desc/Text/S */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  transition: 0.5s;
+}
+main .products .content .cards .card .content a:hover {
+  color: #fff;
+  background: var(--main-primary, #f63);
+  border: 1px solid #f63;
 }
 
 header {
@@ -159,8 +281,12 @@ header nav .items2 .support p {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  padding-top: 95px;
+  padding-top: 97px;
 }
 
 .container {
