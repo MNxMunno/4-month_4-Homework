@@ -12,6 +12,11 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    a {
+      .logo2 {
+        display: none;
+      }
+    }
 
     .items1 {
       display: grid;
@@ -144,6 +149,25 @@ header {
           font-style: normal;
           font-weight: 400;
           line-height: 150%; /* 24px */
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1010px) {
+    nav {
+      a {
+        .logo1 {
+          display: none;
+        }
+        .logo2 {
+          display: block;
+        }
+      }
+      .items1 {
+        .catalog {
+          p {
+            display: none;
+          }
         }
       }
     }

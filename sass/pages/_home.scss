@@ -347,4 +347,39 @@ main {
       }
     }
   }
+  @media only screen and (max-width: 1285px) {
+    .hero {
+      .hero-contents {
+        h1 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1235px) {
+    .products {
+      .content {
+        .cards {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1015px) {
+    .hero {
+      .hero-contents {
+        top: 0;
+      }
+    }
+    .sale {
+      .content {
+        .cards {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
 }
