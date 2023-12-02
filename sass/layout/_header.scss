@@ -46,17 +46,16 @@ header {
         }
       }
       .search {
+        // background-repeat: no-repeat;
         #text {
-          background: url(../../assets/images/articles/search.svg);
-          background-position: 0 0;
-          background-repeat: no-repeat;
+          background: url(../assets/images/articles/search.svg);
           width: 100%;
           outline: navajowhite;
           padding: 8px;
           border-radius: 4px;
           border: 1px solid var(--main-secondary, #70c05b);
           background: var(--main-surface, #fff);
-
+          z-index: 2;
           color: var(--grayscale-hard, #8f8f8f);
 
           /* Desc/Text/S */
