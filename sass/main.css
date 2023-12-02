@@ -1,0 +1,174 @@
+main {
+  height: 100vh;
+  background: var(--main-bg-page, #fbf8ec);
+}
+main .hero {
+  background: #fff;
+  background: url(../../assets/images/support/hero.png);
+  background-repeat: repeat;
+}
+
+header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+header nav .items1 {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  gap: 16px;
+}
+header nav .items1 .catalog {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--main-secondary, #70c05b);
+  cursor: pointer;
+}
+header nav .items1 .catalog p {
+  color: var(--main-on-secondary, #fff);
+  text-align: center;
+  /* Desc/Text/S */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+header nav .items1 .search #text {
+  background: url(../../assets/images/articles/search.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  outline: navajowhite;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--main-secondary, #70c05b);
+  background: var(--main-surface, #fff);
+  color: var(--grayscale-hard, #8f8f8f);
+  /* Desc/Text/S */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+header nav .items2 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header nav .items2 .like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+header nav .items2 .like p {
+  color: var(--main-on-surface, #414141);
+  text-align: center;
+  /* Desc/Text/XS */
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+header nav .items2 .product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+header nav .items2 .product p {
+  color: var(--main-on-surface, #414141);
+  text-align: center;
+  /* Desc/Text/XS */
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+header nav .items2 .shopping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+header nav .items2 .shopping p {
+  color: var(--main-on-surface, #414141);
+  text-align: center;
+  /* Desc/Text/XS */
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+header nav .items2 .support {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+header nav .items2 .support p {
+  color: var(--onSurface, #232323);
+  /* Desc/Text/S */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(../../assets/fonts/Rubik-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 95px;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */

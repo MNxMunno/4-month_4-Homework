@@ -1,0 +1,10 @@
+main {
+  height: 100vh;
+
+  background: var(--main-bg-page, #fbf8ec);
+  .hero {
+    background: #fff;
+    background: url(../../assets/images/support/hero.png);
+    background-repeat: repeat;
+  }
+}
